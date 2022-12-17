@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: blue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    min-height: 300px;
+    background: #fff;
+    margin: 50px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rbga(0,0,0,0,1);
+}
+.container .left_Side
+{
+   position:relative;
+   background: lightblue;
+   padding: 40px;
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightblue;
+}
+.profileText. imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container .right_Side
+{
+   position:relative;
+   background: white;
+   padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color:red;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about .skill
+{
+    position:relative;
+    width: 100%;
+    display:grid;
+    grid-template-rows: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.box h4 
+{
+    text-transform: uppercase;
+    color: rgb(119, 23, 23);
+    font-weight:500;
+}
+.box .percent
+{
+    position:relative;
+    border-width:100%;
+    border-height:10px;
+    background-color:#f0f0f0;
+    padding: 10px;
+}
+.box .percent div
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background: orange;
+}
+.interested ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li
+{
+    list-style: none;
+    color:rgb(119, 23, 23);
+    font-weight: 500;
+    margin:10px 0;
+}
+.interest ul li .fa
+{
+    color:yellowgreen;
+    font-size: 20px;
+}
